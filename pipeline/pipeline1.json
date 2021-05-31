@@ -40,6 +40,7 @@
 									"path": "$['_id']['$oid']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 1
 								}
 							},
@@ -48,6 +49,7 @@
 									"path": "$['No disposition']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 2
 								}
 							},
@@ -56,6 +58,7 @@
 									"path": "$['Date mutation']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 3
 								}
 							},
@@ -64,6 +67,7 @@
 									"path": "$['Nature mutation']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 4
 								}
 							},
@@ -72,6 +76,7 @@
 									"path": "$['Valeur fonciere']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 5
 								}
 							},
@@ -80,6 +85,7 @@
 									"path": "$['No voie']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 6
 								}
 							},
@@ -88,6 +94,7 @@
 									"path": "$['Type de voie']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 7
 								}
 							},
@@ -96,6 +103,7 @@
 									"path": "$['Code voie']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 8
 								}
 							},
@@ -104,6 +112,7 @@
 									"path": "$['Voie']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 9
 								}
 							},
@@ -112,6 +121,7 @@
 									"path": "$['Code postal']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 10
 								}
 							},
@@ -120,6 +130,7 @@
 									"path": "$['Commune']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 11
 								}
 							},
@@ -128,6 +139,7 @@
 									"path": "$['Code departement']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 12
 								}
 							},
@@ -136,6 +148,7 @@
 									"path": "$['Code commune']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 13
 								}
 							},
@@ -144,6 +157,7 @@
 									"path": "$['Section']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 14
 								}
 							},
@@ -152,6 +166,7 @@
 									"path": "$['No plan']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 15
 								}
 							},
@@ -160,6 +175,7 @@
 									"path": "$['1er lot']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 16
 								}
 							},
@@ -168,6 +184,7 @@
 									"path": "$['Surface Carrez du 1er lot']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 17
 								}
 							},
@@ -176,6 +193,7 @@
 									"path": "$['Nombre de lots']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 18
 								}
 							},
@@ -184,6 +202,7 @@
 									"path": "$['Code type local']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 19
 								}
 							},
@@ -192,6 +211,7 @@
 									"path": "$['Type local']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 20
 								}
 							},
@@ -200,6 +220,7 @@
 									"path": "$['Surface reelle bati']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 21
 								}
 							},
@@ -208,6 +229,7 @@
 									"path": "$['Nombre pieces principales']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 22
 								}
 							},
@@ -216,6 +238,7 @@
 									"path": "$['Nature culture']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 23
 								}
 							},
@@ -224,10 +247,12 @@
 									"path": "$['Surface terrain']"
 								},
 								"sink": {
+									"type": "Byte",
 									"ordinal": 24
 								}
 							}
-						]
+						],
+						"mapComplexValuesToString": false
 					}
 				},
 				"inputs": [
