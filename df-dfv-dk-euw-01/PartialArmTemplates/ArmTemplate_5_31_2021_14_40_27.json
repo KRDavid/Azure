@@ -6,22 +6,6 @@
 			"type": "string",
 			"metadata": "Nom de fabrique de données",
 			"defaultValue": "df-dfv-dk-euw-01"
-		},
-		"CosmosDbMongoDbApi1_connectionString": {
-			"type": "secureString",
-			"metadata": "Chaîne sécurisée pour « connectionString » de « CosmosDbMongoDbApi1 »"
-		},
-		"dlstrv2dvfdkeuw01_accountKey": {
-			"type": "secureString",
-			"metadata": "Chaîne sécurisée pour « accountKey » de « dlstrv2dvfdkeuw01 »"
-		},
-		"CosmosDbMongoDbApi1_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "dvf"
-		},
-		"dlstrv2dvfdkeuw01_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://stdlvfoncieresdkeuw01.dfs.core.windows.net"
 		}
 	},
 	"variables": {
@@ -275,99 +259,18 @@
 						"inputs": [
 							{
 								"referenceName": "CosmosDbMongoDbApiCollection1",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						],
 						"outputs": [
 							{
 								"referenceName": "dvf",
-								"type": "DatasetReference",
-								"parameters": {}
+								"type": "DatasetReference"
 							}
 						]
 					}
 				],
 				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/CosmosDbMongoDbApiCollection1')]",
-				"[concat(variables('factoryId'), '/datasets/dvf')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/CosmosDbMongoDbApiCollection1')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "CosmosDbMongoDbApi1",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "CosmosDbMongoDbApiCollection",
-				"schema": [],
-				"typeProperties": {
-					"collection": "mutation"
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/CosmosDbMongoDbApi1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/dvf')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "dlstrv2dvfdkeuw01",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DelimitedText",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobFSLocation"
-					},
-					"columnDelimiter": ",",
-					"escapeChar": "\\",
-					"quoteChar": "\""
-				},
-				"schema": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/dlstrv2dvfdkeuw01')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/CosmosDbMongoDbApi1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "CosmosDbMongoDbApi",
-				"typeProperties": {
-					"connectionString": "[parameters('CosmosDbMongoDbApi1_connectionString')]",
-					"database": "[parameters('CosmosDbMongoDbApi1_properties_typeProperties_database')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/dlstrv2dvfdkeuw01')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('dlstrv2dvfdkeuw01_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('dlstrv2dvfdkeuw01_accountKey')]"
-					}
-				}
 			},
 			"dependsOn": []
 		}
