@@ -92,8 +92,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "AzureBlobFSLocation",
-						"fileName": "dvf.csv"
+						"type": "AzureBlobFSLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
