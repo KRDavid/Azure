@@ -1,0 +1,21 @@
+{
+	"name": "dvf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dlstrv2dvfdkeuw01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dvf.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
