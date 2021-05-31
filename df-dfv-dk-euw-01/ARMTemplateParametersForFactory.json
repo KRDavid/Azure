@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "df-dfv-dk-euw-01"
+		},
+		"CosmosDbMongoDbApi1_connectionString": {
+			"value": ""
+		},
+		"dlstrv2dvfdkeuw01_accountKey": {
+			"value": ""
+		},
+		"CosmosDbMongoDbApi1_properties_typeProperties_database": {
+			"value": "dvf"
+		},
+		"dlstrv2dvfdkeuw01_properties_typeProperties_url": {
+			"value": "https://stdlvfoncieresdkeuw01.dfs.core.windows.net"
+		}
+	}
+}
