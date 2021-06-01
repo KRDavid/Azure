@@ -257,6 +257,7 @@
 											"path": "$['Nature culture']"
 										},
 										"sink": {
+											"type": "String",
 											"ordinal": 23
 										}
 									},
@@ -265,6 +266,7 @@
 											"path": "$['Surface terrain']"
 										},
 										"sink": {
+											"type": "String",
 											"ordinal": 24
 										}
 									}
@@ -368,6 +370,17 @@
 						"value": "[parameters('dlstrv2dvfdkeuw01_accountKey')]"
 					}
 				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/irdfv01')]",
+			"type": "Microsoft.DataFactory/factories/integrationRuntimes",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "SelfHosted",
+				"description": "merci pour le trojan",
+				"typeProperties": {}
 			},
 			"dependsOn": []
 		}
