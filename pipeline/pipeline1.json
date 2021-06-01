@@ -225,6 +225,7 @@
 									"path": "$['Nature culture']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 23
 								}
 							},
@@ -233,6 +234,7 @@
 									"path": "$['Surface terrain']"
 								},
 								"sink": {
+									"type": "String",
 									"ordinal": 24
 								}
 							}
